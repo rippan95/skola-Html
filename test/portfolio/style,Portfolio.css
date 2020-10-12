@@ -1,0 +1,8 @@
+body {
+    background-color:#0d1f33;
+    font-family: Palatino, URW Palladio L, serif; 
+  }
+  .pictures {
+    display: flex;
+    justify-content: center;
+  }
