@@ -6,3 +6,35 @@ body {
     display: flex;
     justify-content: center;
   }
+  #meny li {
+    display: inline;
+    list-style: none;
+    }
+    
+    #meny li a {
+    margin: 0 5px 0 0;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 50px;
+    font-family: Palatino, URW Palladio L, serif; 
+    font-size: 35px;
+    color: rgba(66,48,1,1);
+    border-radius: 5px;
+    }
+    
+    #meny li a:hover {
+    cursor: pointer;
+    background:#db9cc2;
+    color:#0d1f33;
+    }
+    
+    #meny a:link, #meny a:visited {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    }
+    footer {
+      background-color: #F1F1F1;
+      text-align: center;
+      padding: 0px;
+    }
