@@ -57,6 +57,11 @@ p {
   text-align: center;
 }
 
+.pictures {
+  display: flex;
+  justify-content: center;
+  }
+
 div{
     
     color: white;
