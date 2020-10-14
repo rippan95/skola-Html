@@ -77,3 +77,28 @@ footer {
     text-align: center;
     padding: 0px;
   }
+-------------------------------
+footer{
+  color: rgb(241, 241, 241)61, 43, 43);
+  
+}
+footer a{
+  color: #12b6b6;
+  
+}
+
+
+.footer-bottom{
+  background: #0d1f33;
+  padding: 2em;
+}
+
+.footer-middle{
+   background: #0d1f33;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  
+}
+
+
+

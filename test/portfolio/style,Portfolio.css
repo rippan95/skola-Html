@@ -41,13 +41,10 @@ body {
 
 
 :root {
-	/* Base font size */
+	
 	font-size: 10px;
 }
 
-*,
-*::before,
-*::after {
 	box-sizing: border-box;
 }
 
@@ -77,14 +74,12 @@ body {
 }
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	margin: -1rem -1rem;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .gallery-item {
-	flex: 1 0 24rem;
-	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
 }
