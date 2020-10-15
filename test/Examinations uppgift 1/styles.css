@@ -72,33 +72,64 @@ div{
     
 }
 
-footer {
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 0px;
-  }
--------------------------------
-footer{
-  color: rgb(241, 241, 241)61, 43, 43);
-  
-}
-footer a{
-  color: #12b6b6;
-  
-}
-
-
-.footer-bottom{
-  background: #0d1f33;
-  padding: 2em;
-}
-
 .footer-middle{
    background: #0d1f33;
   color: rgb(255, 255, 255);
   font-size: 20px;
-  
 }
 
+._12 {
+    font-size: 20px;
+}
+._14 {
+    font-size: 20px;
+    text-align: center;
+}
+ul {
+    padding:0;
+    list-style: none;
+    text-align: center;
+}
 
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.facebook {
+    padding:10px 14px;
+    background-color: #322f30;
+}
+.facebook:hover {
+    background-color: #3d5b99;
+}
+.Twitch {
+  padding:10px 14px;
+  background-color: #322f30;
+}
+.Twitch:hover {
+  background-color: #5f13c4;
+}
+.instagram{
+    padding:10px 14px;
+    background-color: #322f30;
+}
+.instagram:hover {
+    background-color: #d420c5;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.github {
+    padding:10px 14px;
+    background-color: #322f30;
+}
+.github:hover {
+    background-color: #5a32a3;
+}
 
