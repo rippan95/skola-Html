@@ -51,6 +51,56 @@ body {
   color: rgba(255,255,255,1);
   text-decoration: none;
   }
+  
+  /*så den passar menyn  */
+.dropdown {
+  display: inline;
+  overflow: hidden;
+}
+
+/* gör så den passar resten av menyn */
+.dropdown .dropbtn {
+  font-size: 35px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  background-color: #0d1f33;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*gör den till en går ner å inte bara är ute  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #db9cc2;;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Gör så den rullar neråt */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 22.5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Lägg till en rosa bakgrund på topnav-länkar och rullgardinsmenyn */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #db9cc2;
+  color: black;
+  
+}
+
+
+/* Visa rullgardinsmenyn när användaren flyttar musen över rullgardinsmenyn */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 p {
   font-family: 'Times New Roman', Times, serif;
@@ -101,22 +151,22 @@ ul {
     text-decoration: none;
 }
 .facebook {
-    padding:10px 14px;
-    background-color: #322f30;
+    padding:20px 24px;
+    background-color:#0d1f33;
 }
 .facebook:hover {
     background-color: #3d5b99;
 }
 .Twitch {
-  padding:10px 14px;
-  background-color: #322f30;
+  padding:20px 24px;
+  background-color:#0d1f33;
 }
 .Twitch:hover {
   background-color: #5f13c4;
 }
 .instagram{
-    padding:10px 14px;
-    background-color: #322f30;
+    padding:20px 24px;
+    background-color:#0d1f33;
 }
 .instagram:hover {
     background-color: #d420c5;
@@ -126,8 +176,8 @@ ul {
     background-color: #0073a4;
 }
 .github {
-    padding:10px 14px;
-    background-color: #322f30;
+    padding:20px 24px;
+    background-color: #0d1f33;
 }
 .github:hover {
     background-color: #5a32a3;
