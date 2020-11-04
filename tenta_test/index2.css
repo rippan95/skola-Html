@@ -1,0 +1,25 @@
+body {
+    font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+    background-color: #e8c3b9;
+    color: #fff;
+    text-align: center;
+  }
+
+  .moving-letters {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
+  }
+  .ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
