@@ -1,0 +1,57 @@
+
+body {
+  background-color:#0d1f33;
+  font-family: Palatino, URW Palladio L, serif; 
+  text-align: center;
+}
+
+/* Footer börjar */
+.footer-middle{
+  background: #0d1f33;
+ color: rgb(255, 255, 255);
+ font-size: 20px;
+}
+._12 {
+   font-size: 20px;
+}
+._14 {
+   font-size: 20px;
+   text-align: center;
+}
+ul {
+   padding:0;
+   list-style: none;
+   text-align: center;
+}
+.social-icons li {
+   vertical-align: top;
+   display: inline;
+ }
+ .social-icons a {
+   color: #fff;
+   text-decoration: none;
+   height: 24px;
+}
+.facebook:hover {
+   background-color: #3d5b99;
+}
+.Twitch:hover {
+ background-color: #5f13c4;
+}
+.instagram:hover {
+   background-color: #d420c5;
+}
+.github:hover {
+ background-color: #5a32a3;
+}
+.logo {
+ -o-transition:.5s;
+ -ms-transition:.5s;
+ -moz-transition:.5s;
+ -webkit-transition:.5s;
+ transition: .5s;
+ padding:20px 20px;
+ height: 24px;
+ width: 24px;
+ border-radius: 50%;
+}
