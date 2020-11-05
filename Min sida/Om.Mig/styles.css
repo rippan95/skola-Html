@@ -7,17 +7,6 @@ body {
     justify-content: center;
   }
   
-  #katt{
-    padding: 5px;
-    width: 5%;
-    height: 5%;
-  }
-  
-  #jag{
-    padding: 5px;
-    width: 5%;
-    height: 5%;
-  }
   img {
     writing-mode: horizontal-tb;
     width: 100%;
@@ -113,7 +102,7 @@ body {
 
 p {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
 }
 .pictures {
