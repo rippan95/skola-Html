@@ -1,0 +1,12 @@
+Body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #784f85;
+}
+ul li{
+    color: darkblue;
+}
+ol li{
+    color: darkgoldenrod;
+}
