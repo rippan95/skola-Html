@@ -1,55 +1,36 @@
-body {
-	font-family: Trebuchet MS;
-	font-size: 16px;
-	color: #555;
-	margin: 0px;
-	padding: 0px;
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
 }
-#wrapper {
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
+
+#navcontainer a
+{
+display: block;
+color: #FFF;
+background-color: #036;
+width: 9em;
+padding: 3px 12px 3px 8px;
+text-decoration: none;
+border-bottom: 1px solid #fff;
+font-weight: bold;
 }
-header {
-	height: 80px;
-	padding: 2%;
-	background-color: #DDD;
+
+#navcontainer a:hover
+{
+background-color: #369;
+color: #FFF;
 }
-nav {
-	height: 50px;
-	background-color: #CCC;
-}
-ul {
-	margin: 0px 1%;
-	padding: 0px;
-	list-style-type: none;
-	display: block;
-}
-nav ul li a {
-	margin: 14px;
-	display: block;
-	float: left;
-	text-decoration: none;
-	color: #555;
-}
-#sidebar {
-	width: 26%;
-	min-height: 400px;
-	float: right;
-	padding: 2%;
-	background-color: #DDD;
-}
-article {
-	width: 66%;
-  min-height: 400px;
-	float: left;
-	padding: 2%;
-	background-color: #EEE;
-}
-footer {
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
-	overflow: auto;
-  background-color: #CCC;
+
+#navcontainer li li a
+{
+display: block;
+color: #FFF;
+background-color: #69C;
+width: 9em;
+padding: 3px 3px 3px 17px;
+text-decoration: none;
+border-bottom: 1px solid #fff;
+font-weight: normal;
 }
