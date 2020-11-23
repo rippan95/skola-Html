@@ -123,7 +123,7 @@ class Toys extends Products {
 }
 */
 
-let object1 = new Product(123456, "Skor", "jeans skor", 25);
+let object1 = new Product(123456, "Skor", "jeans skor", 24);
 let object2 = new Product(789101, "Hoodie", "Slätt Söt Sweatshirt ", 43);
 let object3 = new Product(112131, "Blus", " Broderi Blommig Elegant Blus ", 63);
 let object4 = new Product(141516, "Jeans", "Svarta jeans", 36);
@@ -148,12 +148,31 @@ class stock {
             product.print();
         }
     }
- 
-let stock = new stock();
+ }
 
+class Product {
+    constructor(title, no_in_stock) {
+        this.title = title;
+        this.no_in_stock = no_in_stock;
+    }
+
+    print() {
+        console.log(this.title + ' - ' + this.no_in_stock);
+    }
+}
+
+let stock = new Stock();
+
+let jacket = new Product("Skor", 24);
+let pants = new Product("Jeans", 36);
+let shoes = new Product("Blus", 63);
+
+stock.add_product(jacka);
+stock.add_product(hoodie);
+stock.add_product(t-shirt);
+
+stock.inventory();
 */
-
-
 
 
 class Basket {
