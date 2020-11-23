@@ -5,11 +5,11 @@ function different_signs(x, y) {
     if (x < 0  && y >= 0) {
         return true;
     }
-    if (y < 0  && y >= 0) {
+    if (y < 0  && x >= 0) {
         return true;
     }
 
     return false;
 }
 
-console.log (different_signs(-4,3));
+console.log (different_signs(4,3));
