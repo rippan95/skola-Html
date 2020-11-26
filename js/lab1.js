@@ -1,180 +1,71 @@
-// Labb 1 - e-handel
-
-
-//Produkter ska ha egenskaper som sku (artikelnr), titel, beskrivning, antal i lager, pris. Den ska ha en metod som skriver ut produkten. 
-
-/* class Product {
-    constructor( sku, title, beskrivnig, antal, pris) {
-        this.sku = sku;
-        this.title = title;
-        this.beskrivnig = beskrivnig;
-        this.antal = antal;
-        this.pris = pris;
-    }
-
-    printProduct(){
-        console.log(`Article Number: ${this.sku} | Product: ${this.title} | Info: ${this.beskrivnig} | In-Stock: ${this.antal} | Price: ${this.pris}`);
-    }
-
-}*/
-
-//•Kläder ska ha en klass som ärver från produkter och lägger till egenskapen storlek. 
-
-/* */
-
-//•Leksaker ska ha en klass som ärver från produkter och lägger till egenskapen ”ålder från”. 
-
-/* */
-
-//•Det ska finnas en lager-klass som håller reda på alla produkter i butiken och hur många som finns i lager av varje produkt. 
-
-/* */
-
-//•Det ska finnas en inventarie-metod som skriver ut en lista med alla produkter och hur många det finns av produkten.
-
-/* */
-
-//•Det ska finnas en metod som returnerar ett objekt baserat på sku. Om det t ex finns en produkt ”jacka” med sku ”456” så ska man kunna söka efter produkten genom att skicka artikelnumret till metoden och få tillbaka objektet. •Det ska finnas en varukorg som innehåller 0-n produkter. Varukorgen ska höra ihop med en kund.
-
-/* */
-
-// •Varukorgen ska ha en metod för att skriva ut innehållet i korgen.
-
-/* let items = [
-    ['Tröja', 29.90],
-    ['Hoddie', 235.50],
-    ['Jeans', 699.90]
-    ].map(x => new Item(...x));
-    console.log('All items', items);*/
-
-//•Varukorgen ska ha en metod för att räkna ihop summan av värdet av alla produkter i korgen. 
-
-/*  console.log('Korgens innehåll',
-    JSON.stringify(basket.contents, '', ' ')); */
-
-//•Varukorgen ska ha metoder för att lägga till och ta bort produkter i varukorgen. 
-
-/*basket.remove(items[1]);
-console.log('Korgens innehåll (inga Jeans)',
-JSON.stringify(basket.contents, '', ' '));*/
-
-
-//•Det ska finnas en kund-klass som håller reda på namn, orderhistorik och nuvarande varukorg.
-
-/* */
-
-
-//•Det ska finnas en köp-metod som lägger till varukorgens innehåll i kundens köphistorik med datum och minskar lagervärdet på produkte
-
-/* */
 
 class Product {
-    constructor( sku, title, beskrivnig, antal, pris) {
-        this.sku = sku;
-        this.title = title;
-        this.beskrivnig = beskrivnig;
-        this.antal = antal;
-        this.pris = pris;
+    constructor(sku, title, description, price, numbInStock) {
+      this.sku = sku;
+      this.title = title;
+      this.description = description;    
+      this.price = price;
+      this.numbInStock = numbInStock;
     }
-
-    printProduct(){
-        console.log(`Article Number: ${this.sku} | Product: ${this.title} | Info: ${this.beskrivnig} | In-Stock: ${this.antal} | Price: ${this.pris}`);
+  
+    printList(){
+      console.log(`Article Number: ${this.sku} | Product: ${this.title} | Info: ${this.description} | Price: ${this.price} | Stock: ${this.numbInStock} `);
     }
-
-}
-class Clothes extends Products {
-    constructor(sku, title, beskrivnig, antal, pris, storlek) {
-      this.storlek = storlek;
-      super(sku, title, beskrivnig, antal, pris)
-    }  
-   
-  } 
-
-  /*
-class Clothes {
-    constructor(sku, title, beskrivnig , antal , pris, storlek) {
-        this.sku = sku;
-        this.title = title;
-        this.beskrivnig = beskrivnig;
-        this.antal = antal;
-        this.pris = pris;
-        this.storlek = storlek;
+  
+  }
+  
+  class Clothes extends Product{
+    constructor(sku, title, description, price, size, numbInStock) {
+      this.size = size;
+      super(sku, title, description, price, numbInStock)
     }
-
-}
-*/
-class Toys extends Products {
-    constructor(sku, title, beskrinvnig, antal, pris, ageFrom) {
+  
+  }
+  
+  
+  class Toys extends Product {
+    constructor(sku, title, description, price, numbInStock, ageFrom) {
       this.ageFrom = ageFrom;
-      super(sku, title, beskrinvnig, antal, pris)
+      super(sku, title, description, price, numbInStock)
     }  
    
   }
-
-/*class Toys {
-    constructor(sku, title, beskrivnig, antal, pris, ålder) {
-        this.sku = sku;
-        this.title = title;
-        this.beskrivnig = beskrivnig;
-        this.antal = antal;
-        this.pris = pris;
-        this.ålder = ålder;
-    }
-}
-*/
-
-let object1 = new Product(123456, "Skor", "jeans skor", 24);
-let object2 = new Product(789101, "Hoodie", "Slätt Söt Sweatshirt ", 43);
-let object3 = new Product(112131, "Blus", " Broderi Blommig Elegant Blus ", 63);
-let object4 = new Product(141516, "Jeans", "Svarta jeans", 36);
-
-
-object1.printProduct();
- 
-/*
-class stock {
-    constructor () {
-        this.Produkt = ();
-
-    }
-    add_produkt( produkt) {
-        this.produkt.push(prudukter);
-
-    }
-    ineventory () {
-        console.log ("all produkter");
-        for (let produkt of this. produkt){
-            console.log (prudukter.titel + " - " + produkt ){
-            product.print();
-        }
-    }
- }
-
-class Product {
-    constructor(title, no_in_stock) {
-        this.title = title;
-        this.no_in_stock = no_in_stock;
+  
+  class Stock {
+    constructor(){
+      this.products = [];
     }
 
-    print() {
-        console.log(this.title + ' - ' + this.no_in_stock);
+    addProduct(product) {    
+        this.products.push(product);
+      }
+      
+      printIventory() {
+        let localProducts = this.products.map(product => 'Product: ' + product.title + ', amount in stock: ' + product.numbInStock);
+        console.log(localProducts);    
+      }
+    
+      searchProduct(sku){
+        const result = this.products.find(product => {
+          if (product.sku === sku) {             
+            return product;
+          }                            
+      });  
+        console.log(result); 
+      }
+    
     }
-}
 
-let stock = new Stock();
+    let stock = new Stock();
+    
+    let jacket = new Product("Jacket", 4);
+    let jacket2 = new Product("bluse", 10);
+    let pants = new Product("underclothes", 5);
+    let shoes = new Product("Shoes", 12);
+    
+    
 
-let jacket = new Product("Skor", 24);
-let pants = new Product("Jeans", 36);
-let shoes = new Product("Blus", 63);
-
-stock.add_product(jacka);
-stock.add_product(hoodie);
-stock.add_product(t-shirt);
-
-stock.inventory();
-*/
-
-
+ /*
 class Basket {
 
       constructor() {
@@ -241,18 +132,18 @@ class Basket {
 
     // Skapa några varor
     let items = [
-    ['Skor', 29.90],
-    ['Hoodie', 235.50],
-    ['Jeans', 699.90]
+    ['bluse', 29.90],
+    ['underclothes', 235.50],
+    ['Jacket', 699.90]
     ].map(x => new Item(...x));
     console.log('All items', items);
 
     // Lägg till dem i varukorgen
     // (2 skor, 3 hoodie, 2 jeans)
-    basket.add(items[0], 5);
-    basket.add(items[1], 1);
-    basket.add(items[1], 2);
-    basket.add(items[2], 2);
+    basket.add(items[0], 4);
+    basket.add(items[1], 10);
+    basket.add(items[1], 5);
+    basket.add(items[2], 12);
 
     // Titta på varukorgens innehåll
     console.log('Korgens innehåll',
@@ -263,7 +154,7 @@ class Basket {
     console.log('Korgens innehåll (inga Jeans)',
     JSON.stringify(basket.contents, '', ' '));
 
-    
+     */ 
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -276,44 +167,25 @@ class Person {
 }
 
 
-class Employee extends Person {
-    constructor(name, age, salary) {
-        super(name, age);
-        this.salary = salary;
+class Customer {
+  constructor(name) {
+    this.cart = new Shoppingcart();
+    this.name = name;
+    this.history = [];
+  }
 
-class Clothes extends Product {
-    constructor(sku, title, beskrinvnig, antal, pris, storlek) {
-        super(sku, title, beskrinvnig, antal, pris)
-        this.storlek = storlek;
-    }
-}
-
-class Clothes extends Product {
-    constructor(sku, title, beskrinvnig, antal, pris, storlek) {
-        super(sku, title, beskrinvnig, antal, pris)
-        this.storlek = storlek;
-    }
-}
-    class Toys extends Product {
-        constructor(sku, title, beskrinvnig, antal, pris, ålder) {
-            super(sku, title, beskrinvnig, antal, pris);
-            this.ålder = ålder;
-        }
-    }
-    class Stock {
-        inventory () {
-            
-        }
-    }
-
-    class Stock {
-        print_inventory () {
-            console.log(Clothes);
-        }
-    }
+  buy() {
+    this.history.push(this.cart);
+    let d = new Date();
+    this.history.push(d);
     
-    let stock1 = new Stock();
-    stock1.print_inventory(); 
- 
-         }
-     }    
+
+    for (let i = 0; i < this.cart.cart.length; i++) {
+      let product = stock.products.find(
+        (p) => p.title === this.cart.cart[i].title
+      );
+      product.no_in_stock--;
+      console.log(product);
+    }
+  }
+}  
