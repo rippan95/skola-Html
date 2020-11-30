@@ -63,3 +63,22 @@ Del 10
     Sätt default-värdet för parametern list till this.employees, så att om man inte anger någon parameter är det fortfarande this.employees som kommer att skrivas ut.
 
 */
+
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    print() {
+        console.log(this.name + ': ' + this.age)
+    }
+}
+
+class Employee extends Person {
+    constructor(name, age, salery) {
+        super(name, age);
+        this.salery = salery;
+    }
+}

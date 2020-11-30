@@ -31,19 +31,28 @@ class Product {
    
   }
   
-  class Stock {
-    constructor(){
-      this.products = [];
+  class Warehouse {
+    constructor(products = []) {
+      this.products = products;
     }
 
-    addProduct(product) {    
-        this.products.push(product);
-      }
+    addNewProduct(sku, title, description, price, noInStock) {
+      this.products.push(new Product(sku, title, description, price, noInStock));
+    }
       
-      printIventory() {
-        let localProducts = this.products.map(product => 'Product: ' + product.title + ', amount in stock: ' + product.numbInStock);
-        console.log(localProducts);    
-      }
+    addNewClothes(sku, title, description, price, noInStock, size) {
+      this.products.push(
+        new Clothes(sku, title, description, price, noInStock, size)
+      );
+    }
+    addNewToy(sku, title, description, price, noInStock, ageFrom) {
+      this.products.push(
+        new Toy(sku, title, description, price, noInStock, ageFrom)
+      );
+    }
+    printWarehouseStock() {
+      console.log(this.products);
+    }
     
       searchProduct(sku){
         const result = this.products.find(product => {
@@ -55,17 +64,16 @@ class Product {
       }
     
     }
-
-    let stock = new Stock();
+/*
+    let warehouse = new Warehouse();
     
-    let jacket = new Product("Jacket", 4);
-    let jacket2 = new Product("bluse", 10);
-    let pants = new Product("underclothes", 5);
-    let shoes = new Product("Shoes", 12);
+    let jacket = new Product("Jacket", 4, 123, 200);
+    let jacket2 = new Product("Jacket", 10, 987, 500);
+    let pants = new Product("Pants", 5, 456, 300);
+    let shoes = new Product("Shoes", 12, 789, 400);
     
-    
-
- /*
+*/
+ 
 class Basket {
 
       constructor() {
@@ -154,7 +162,7 @@ class Basket {
     console.log('Korgens innehåll (inga Jeans)',
     JSON.stringify(basket.contents, '', ' '));
 
-     */ 
+     
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -169,7 +177,7 @@ class Person {
 
 class Customer {
   constructor(name) {
-    this.cart = new Shoppingcart();
+    this.cart = new basket();
     this.name = name;
     this.history = [];
   }
