@@ -1,0 +1,23 @@
+body {
+    background-color:#0d1f33;
+  }
+
+  p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  div{
+    
+    color: white;
+    text-align: center;
+    font-family: Palatino, URW Palladio L, serif; 
+    font-weight: 100;
+    font-stretch: ultra-expanded;
+    font-variant: small-caps;
+    font-size:5px;
+    margin: 5px;
+    padding: 5px;
+    
+}
