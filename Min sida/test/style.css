@@ -1,7 +1,14 @@
 body {
-    background-color:#0d1f33;
+    background-color:#baccc7;
   }
 
+  h1 {
+     font-size: 40px;
+     font-family:Marker Felt, fantasy ;
+  }
+  #navbar {
+    font-size: 40px;
+  }
   p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;

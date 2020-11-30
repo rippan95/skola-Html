@@ -1,0 +1,100 @@
+.header-section {
+	padding-top: 15px;
+	padding-bottom: 27px;
+	position: relative;
+	z-index: 99;
+}
+
+.header-section.hs-bd {
+	clear: both;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.site-logo {
+	display: inline-block;
+	padding-top: 18px;
+	padding-left: 80px;
+}
+
+.header-controls {
+	float: right;
+	padding: 16px 25px 0 50px;
+}
+
+.header-controls button {
+	background: transparent;
+	border: none;
+	font-size: 19px;
+}
+
+.header-controls button.nav-switch-btn {
+	font-size: 21px;
+	margin-right: 25px;
+}
+
+.slicknav_menu {
+	display: none;
+}
+
+.main-menu {
+	list-style: none;
+	float: right;
+	display: none;
+}
+
+.main-menu li {
+	display: inline-block;
+	position: relative;
+}
+
+.main-menu li.search-mobile {
+	display: none;
+}
+
+.main-menu li a {
+	display: block;
+	font-size: 13px;
+	color: #121212;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 25px 0;
+	margin-right: 45px;
+}
+
+.main-menu li .sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 220px;
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	margin-top: 50px;
+	padding: 10px 0 5px;
+	-webkit-box-shadow: 0 15px 50px 1px rgba(0, 0, 0, 0.13);
+	box-shadow: 0 15px 50px 1px rgba(0, 0, 0, 0.13);
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.main-menu li .sub-menu li {
+	display: block;
+}
+
+.main-menu li .sub-menu li a {
+	padding: 10px 15px;
+	text-transform: none;
+}
+
+.main-menu li:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 0;
+}
+
+.search-mobile button {
+	background: transparent;
+	border: none;
+	color: #fff;
+	padding: 15px;
+}
