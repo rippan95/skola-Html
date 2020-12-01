@@ -1,14 +1,6 @@
-.header-section {
-	padding-top: 15px;
-	padding-bottom: 27px;
-	position: relative;
-	z-index: 99;
-}
-
-.header-section.hs-bd {
-	clear: both;
-	border-bottom: 1px solid #e8e8e8;
-}
+body {
+    background-color: #ffe8d6;
+  }
 
 .site-logo {
 	display: inline-block;
@@ -16,29 +8,9 @@
 	padding-left: 80px;
 }
 
-.header-controls {
-	float: right;
-	padding: 16px 25px 0 50px;
-}
 
-.header-controls button {
-	background: transparent;
-	border: none;
-	font-size: 19px;
-}
-
-.header-controls button.nav-switch-btn {
-	font-size: 21px;
-	margin-right: 25px;
-}
 
 .slicknav_menu {
-	display: none;
-}
-
-.main-menu {
-	list-style: none;
-	float: right;
 	display: none;
 }
 
@@ -52,9 +24,9 @@
 }
 
 .main-menu li a {
-	display: block;
-	font-size: 13px;
-	color: #121212;
+	display: inline-block;
+	font-size: 15px;
+	color: #ff3f12;
 	font-weight: 600;
 	text-transform: uppercase;
 	padding: 25px 0;
@@ -63,9 +35,6 @@
 
 .main-menu li .sub-menu {
 	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 220px;
 	background: #fff;
 	visibility: hidden;
 	opacity: 0;
@@ -92,9 +61,4 @@
 	margin-top: 0;
 }
 
-.search-mobile button {
-	background: transparent;
-	border: none;
-	color: #fff;
-	padding: 15px;
-}
+
