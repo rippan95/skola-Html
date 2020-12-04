@@ -1,0 +1,14 @@
+int tärning1 = 0;
+int antalFörsök = 0;
+random randomObjekt = new random();
+while (tärning1 != 6)
+{
+
+    tärning1 = randomObjekt.next (1, 7);
+    antalFörsök = antalFörsök + 1;
+    console.WriteLine ("försök" + antalFörsök + ": " + tärning1);
+}
+console.WriteLine ("Det behövdes " + antalFörsök + "försök att få en sexa!");
+console.ReadLine();
+
+
