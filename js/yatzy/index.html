@@ -7,148 +7,177 @@
     <link rel="stylesheet" href="style.css" />
   </head>
     <body>
+
+        <header>
+            <ul id="meny">
+              <li><a href="http://127.0.0.1:5500/index.html">Hem</a></li>
+                  <a href="http://127.0.0.1:5500/regler.html">Regler</a>
+              <li><a href="mailto:test@live.se">Kontakt</a></li>
+              <input type="search" name="q" placeholder="Sök">
+              <input type="submit" value="klar!">
+            </ul>
+            <hr>
+          </header>
+
         <p>Formolär för yatzy spelet</p>
-        <table id="resultTable">
           
-            <caption>Yatzy</caption>
-            <thead id="gamersnames">
-                <tr>
-                    <!-- scope är bara för tydlighetens skull -->
-                    <th scope="col" id="faceDescription"></th>
-                    <th scope="col" class="thPlayer"> Spelare 1</th>
-                    <th scope="col" class="thPlayer">Spelare 2</th>
-                    <th scope="col" class="thPlayer">Spelare 3</th>
-                    <th scope="col" class="thPlayer">Spelare 4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="aces faceName">Ettor/Ones</td>
-                    <td class="aces Spelare 1"></td>
-                    <td class="aces Spelare 2"></td>
-                    <td class="aces Spelare 3"></td>
-                    <td class="aces Spelare 4"></td>
-                </tr>
-                <tr>
-                    <td class="twos faceName">Tvåor/Twos</td>
-                    <td class="twos Spelare 1"></td>
-                    <td class="twos Spelare 2"></td>
-                    <td class="twos Spelare 3"></td>
-                    <td class="twos Spelare 4"></td>
-                </tr>
-                <tr>
-                    <td class="threes faceName">threes</td>
-                    <td class="threes player1"></td>
-                    <td class="threes player2"></td>
-                    <td class="threes player3"></td>
-                    <td class="threes player4"></td>
-                </tr>
-                <tr>
-                    <td class="fours faceName">fours</td>
-                    <td class="fours player1"></td>
-                    <td class="fours player2"></td>
-                    <td class="fours player3"></td>
-                    <td class="fours player4"></td>
-                </tr>
-                <tr>
-                    <td class="fives faceName">fives</td>
-                    <td class="fives player1"></td>
-                    <td class="fives player2"></td>
-                    <td class="fives player3"></td>
-                    <td class="fives player4"></td>
-                </tr>
-                <tr>
-                    <td class="sixes faceName">sixes</td>
-                    <td class="sixes player1"></td>
-                    <td class="sixes player2"></td>
-                    <td class="sixes player3"></td>
-                    <td class="sixes player4"></td>
-                </tr>
-                <tr>
-                    <td class="upperSum faceName">upperSum</td>
-                    <td class="upperSum player1"></td>
-                    <td class="upperSum player2"></td>
-                    <td class="upperSum player3"></td>
-                    <td class="upperSum player4"></td>
-                </tr>
-                <tr>
-                    <td class="bonus faceName">bonus</td>
-                    <td class="bonus player1"></td>
-                    <td class="bonus player2"></td>
-                    <td class="bonus player3"></td>
-                    <td class="bonus player4"></td>
-                </tr>
-                <tr>
-                    <td class="onePair faceName">onePair</td>
-                    <td class="onePair player1"></td>
-                    <td class="onePair player2"></td>
-                    <td class="onePair player3"></td>
-                    <td class="onePair player4"></td>
-                </tr>
-                <tr>
-                    <td class="twoPair faceName">twoPair</td>
-                    <td class="twoPair player1"></td>
-                    <td class="twoPair player2"></td>
-                    <td class="twoPair player3"></td>
-                    <td class="twoPair player4"></td>
-                </tr>
-                <tr>
-                    <td class="threeOfAKind faceName">threeOfAKind</td>
-                    <td class="threeOfAKind player1"></td>
-                    <td class="threeOfAKind player2"></td>
-                    <td class="threeOfAKind player3"></td>
-                    <td class="threeOfAKind player4"></td>
-                </tr>
-                <tr>
-                    <td class="fourOfAKind faceName">fourOfAKind</td>
-                    <td class="fourOfAKind player1"></td>
-                    <td class="fourOfAKind player2"></td>
-                    <td class="fourOfAKind player3"></td>
-                    <td class="fourOfAKind player4"></td>
-                </tr>
-                <tr>
-                    <td class="smallStraight faceName">smallStraight</td>
-                    <td class="smallStraight player1"></td>
-                    <td class="smallStraight player2"></td>
-                    <td class="smallStraight player3"></td>
-                    <td class="smallStraight player4"></td>
-                </tr>
-                <tr>
-                    <td class="largeStraight faceName">largeStraight</td>
-                    <td class="largeStraight player1"></td>
-                    <td class="largeStraight player2"></td>
-                    <td class="largeStraight player3"></td>
-                    <td class="largeStraight player4"></td>
-                </tr>
-                <tr>
-                    <td class="fullHouse faceName">fullHouse</td>
-                    <td class="fullHouse player1"></td>
-                    <td class="fullHouse player2"></td>
-                    <td class="fullHouse player3"></td>
-                    <td class="fullHouse player4"></td>
-                </tr>
-                <tr>
-                    <td class="chance faceName">chance</td>
-                    <td class="chance player1"></td>
-                    <td class="chance player2"></td>
-                    <td class="chance player3"></td>
-                    <td class="chance player4"></td>
-                </tr>
-                <tr>
-                    <td class="yahtzee faceName">yahtzee</td>
-                    <td class="yahtzee player1"></td>
-                    <td class="yahtzee player2"></td>
-                    <td class="yahtzee player3"></td>
-                    <td class="yahtzee player4"></td>
-                </tr>
-                <tr id="trSum">
-                    <td class="lowerSum faceName">lowerSum</td>
-                    <td class="lowerSum player1"></td>
-                    <td class="lowerSum player2"></td>
-                    <td class="lowerSum player3"></td>
-                    <td class="lowerSum player4"></td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
-</html>
+            <div class="scoresheet">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Spelare/Players</th>
+                      <td id="Mattias"></td>
+                      <td id="player2"></td>
+                      <td id="player3"></td>
+                      <td id="player4"></td>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>Ettor/Ones</td>
+                      <td class="column" id="ones1"></td>
+                      <td id="ones2"></td>
+                      <td class="column" id="ones3"></td>
+                      <td id="ones4"></td>
+                    </tr>
+          
+                    <tr>
+                      <td>Tvåor/Twos</td>
+                      <td class="column" id="twos1"></td>
+                      <td id="twos2"></td>
+                      <td class="column" id="twos3"></td>
+                      <td id="twos4"></td>
+                    </tr>
+                    <tr>
+                      <td>Treor/Threes</td>
+                      <td class="column" id="threes1"></td>
+                      <td id="threes2"></td>
+                      <td class="column" id="threes3"></td>
+                      <td id="threes4"></td>
+                    </tr>
+                    <tr>
+                      <td>Fyror/Fours</td>
+                      <td class="column" id="fours1"></td>
+                      <td id="fours2"></td>
+                      <td class="column" id="fours3"></td>
+                      <td id="fours4"></td>
+                    </tr>
+                    <tr>
+                      <td>Femmor/Fives</td>
+                      <td class="column" id="fives1"></td>
+                      <td id="fives2"></td>
+                      <td class="column" id="fives3"></td>
+                      <td id="fives4"></td>
+                    </tr>
+                    <tr>
+                      <td>Sexor/Sixes</td>
+                      <td class="column" id="sixes1"></td>
+                      <td id="sixes2"></td>
+                      <td class="column" id="sixes3"></td>
+                      <td id="sixes4"></td>
+                    </tr>
+          
+                    <tr>
+                      <th>Summa/Sum</th>
+                      <td class="row" id="sum1"></td>
+                      <td class="row" id="sum2"></td>
+                      <td class="row" id="sum3"></td>
+                      <td class="row" id="sum4"></td>
+                    </tr>
+                    <tr>
+                      <th>Bonus</th>
+                      <td class="row" id="bonus1"></td>
+                      <td class="row" id="bonus2"></td>
+                      <td class="row" id="bonus3"></td>
+                      <td class="row" id="bonus4"></td>
+                    </tr>
+          
+                    <tr>
+                      <td>Par/Pair</td>
+                      <td class="column" id="pair1"></td>
+                      <td id="pair2"></td>
+                      <td class="column" id="pair3"></td>
+                      <td id="pair4"></td>
+                    </tr>
+          
+                    <tr>
+                      <td>Två par/Two pairs</td>
+                      <td class="column" id="pairs1"></td>
+                      <td id="pairs2"></td>
+                      <td class="column" id="pairs3"></td>
+                      <td id="pairs4"></td>
+                    </tr>
+                    <tr>
+                      <td>Tretal/Three of a kind</td>
+                      <td class="column" id="threeOfAKind1"></td>
+                      <td id="threeOfAKind2"></td>
+                      <td class="column" id="threeOfAKind3"></td>
+                      <td id="threeOfAKind4"></td>
+                    </tr>
+                    <tr>
+                      <td>Fyrtal/Four of a kind</td>
+                      <td class="column" id="fourOfAKind1"></td>
+                      <td id="fourOfAKind2"></td>
+                      <td class="column" id="fourOfAKind3"></td>
+                      <td id="fourOfAKind4"></td>
+                    </tr>
+                    <tr>
+                      <td>Liten stege/Small straight</td>
+                      <td class="column" id="smallStraight1"></td>
+                      <td id="smallStraight2"></td>
+                      <td class="column" id="smallStraight3"></td>
+                      <td id="smallStraight4"></td>
+                    </tr>
+                    <tr>
+                      <td>Stor stege/Large straight</td>
+                      <td class="column" id="largeStraight1"></td>
+                      <td id="largeStraight2"></td>
+                      <td class="column" id="largeStraight3"></td>
+                      <td id="largeStraight4"></td>
+                    </tr>
+                    <tr>
+                      <td>Kåk/Full house</td>
+                      <td class="column" id="fullHouse1"></td>
+                      <td id="fullHouse2"></td>
+                      <td class="column" id="fullHouse3"></td>
+                      <td id="fullHouse4"></td>
+                    </tr>
+                    <tr>
+                      <td>Chans/Chance</td>
+                      <td class="column" id="chance1"></td>
+                      <td id="chance2"></td>
+                      <td class="column" id="chance3"></td>
+                      <td id="chance4"></td>
+                    </tr>
+                    <tr>
+                      <td>Yatzy</td>
+                      <td class="column" id="yatzy1"></td>
+                      <td id="yatzy2"></td>
+                      <td class="column" id="yatzy3"></td>
+                      <td id="yatzy4"></td>
+                    </tr>
+                    <tr>
+                      <th>Totalt/Total</th>
+                      <td class="row" id="total1"></td>
+                      <td class="row" id="total2"></td>
+                      <td class="row" id="total3"></td>
+                      <td class="row" id="total4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="diceDiv">
+                  <img id="dice1" src="1.png" alt="" onclick="dice1.lockDice()" />
+                  <img id="dice2" src="2.png" alt="" onclick="dice2.lockDice()" />
+                  <img id="dice3" src="3.png" alt="" onclick="dice3.lockDice()" />
+                  <img id="dice4" src="4.png" alt="" onclick="dice4.lockDice()" />
+                  <img id="dice5" src="5.png" alt="" onclick="dice5.lockDice()" />
+                  <img id="dice6" src="6.png" alt="" onclick="dice6.lockDice()" />
+                </div>
+                <button onclick="rollAllDice()">Roll the dice!</button>
+                <button onclick="nextPlayer()">Nästa spelare</button>
+              </div>
+              <script src="#"></script>
+            </body>
+          </html>
+          
