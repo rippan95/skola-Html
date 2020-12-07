@@ -14,9 +14,9 @@ function initFaceDescription() {
         "Tretal/threeOfAKind":     "TRETAL: Tre lika tärningar räknas som tretal. Ger poäng efter de tre tärningarnas antal prickar.",
         "Fyrtal/fourOfAKind":      "FYRTAL: Fyra lika tärningar. Ger poäng efter tärningarnas prickar.",
         "Liten stege/smallStraight":    "LITEN STRAIGHT: En spelare måste få alla fem tärningarna i följd, från 1 uppåt (1, 2, 3, 4, 5). Summan av tärningarnas prickar (15 poäng) noteras i protokollet.",
-        "Storstege/largeStraight":    "glöm inte att skriva ner den regeln också",
-        "Kåk/fullHouse":        "glöm inte att skriva ner den regeln också",
-        "Chans/chance":           "glöm inte att skriva ner den regeln också",
+        "Storstege/largeStraight":    "STOR STRAIGHT : En spelare måste få alla fem tärningarna i följd, från 2 uppåt (2, 3 ,4 , 5 ,6 ). Summan av tärningarnas prickar (15 poäng) noteras i protokollet.",
+        "Kåk/fullHouse":        " KÅK: tre av en sort, två av en annan ",
+        "Chans/chance":           "CHANS: Så högt som möjligt med random nummer",
         "Yatzy":          "YATZY: Här måste en spelare få alla fem tärningarna lika. YATZY ger alltid 50 poäng.",
         "Totalt/total":    "Slut summan"
     };
