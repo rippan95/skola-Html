@@ -63,3 +63,77 @@ Del 10
     Sätt default-värdet för parametern list till this.employees, så att om man inte anger någon parameter är det fortfarande this.employees som kommer att skrivas ut.
 
 */
+
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    print() {
+        console.log(this.name + ': ' + this.age)
+    }
+}
+
+class Employee extends Person {
+    constructor(name, age, salery) {
+        super(name, age);
+        this.salery = salery;
+    }
+}
+class Boss extends Employee {
+    constructor(name, age, salery, level) {
+        super(name, age, salery);
+        this.level = level;
+    }
+}
+
+class Company {
+    constructor(name) {
+        this.name = name;
+        this.employees = [];
+    }
+
+    list_employees(list = this.employees) {
+        for(let employee of list) {
+            let role = ( employee instanceof Boss ) ? "Chef" : "Anställd";
+            console.log(employee.name + ' - ' + role);
+        }
+    }
+
+    list_bosses() {
+        let bosses = this.employees.filter(employee => employee instanceof Boss);
+        this.list_employees(bosses);
+    }
+
+    add_employee(name, age, salery) {
+        let employee = new Employee(name, age, salery);
+        this.employees.push(employee);
+    }
+
+    add_boss(name, age, salery, level) {
+        let boss = new Boss(name, age, salery, level);
+        this.employees.push(boss);
+    }
+
+    saleries_sum(list = this.employees) {
+        return list.reduce((acc, current_value) => acc + current_value.salery, 0);
+    }
+
+    saleries_sum_bosses() {
+        let bosses = this.employees.filter(employee => employee instanceof Boss);
+        let saleries = this.saleries_sum(bosses);
+        return saleries;
+    }
+}
+
+let company1 = new Company("Ikea");
+company1.add_employee("Cecilia", 33, 25000);
+company1.add_employee("Kalle", 35, 28000);
+company1.add_employee("Mohammad", 22, 22000);
+company1.add_boss("Nisse", 33, 30000, 3);
+company1.add_boss("Jessica", 28, 33000, 4);
+//company1.list_employees();
+console.log(company1.saleries_sum_bosses());
+//company1.list_bosses();

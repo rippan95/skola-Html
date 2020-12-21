@@ -1,7 +1,8 @@
 body {
-    background-color:#0d1f33;
+    background-color:#0d1f33; background-image: url(Namnlös.png);
     font-family: Palatino, URW Palladio L, serif; 
     text-align: center;
+    
   }
   .pictures {
     display: flex;

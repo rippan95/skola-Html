@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>eks1</title>
+    <script type="text/javascript" src="eks3.js"></script>
+    <script type="text/javascript" src="js/nim.js"></script>
+  </head>
+  <body>
+
+    <div id="form1">
+      <h1>The Nim Game</h1>
+      <form id="form">
+        Player 1
+        <br>
+          <input type="text" id="name1" placeholder="Name">
+          <select name="Player 1">
+            <option value="Human">Human</option>
+            <option value="CPU">CPU</option>
+          </select>
+        <br><br>
+        Player 2
+        <br>
+          <input type="text" id="name2" placeholder="Name">
+          <select name="Player 2">
+            <option value="CPU">CPU</option>
+            <option value="Human">Human</option>
+          </select>
+        <br><br><br>
+        Total marbles:
+        <input type="number" id="totalinput" placeholder="Type in number">
+        <br><br>
+        Maximum grab:
+        <input type="number" id="max" placeholder="Type in number">
+      </form>
+      <br><br>
+      <button id="startbutton" type="button" onclick="start()">Start game</button>
+    </div>
+
+    <div id="game" hidden>
+      <header>
+        <h1>The Game of Nim</h1>
+      </header>
+      Totalen er:
+      <div id ="totalen"></div>
+      <br><br>
+      <h3 id="navn1"></h3>
+      <div id="nr1">
+        <h4> Hvor mange kuler vil du ta?</h4>
+        </div>
+      <br><br>
+      <h3 id="navn2"></h3>
+      <div id = "nr2">
+        <h4>Hvor mange kuler vil du ha?</h4>
+      </div>
+    </div>
+  </body>
+</html>

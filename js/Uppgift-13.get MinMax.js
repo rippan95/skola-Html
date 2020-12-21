@@ -14,3 +14,18 @@ Exempel på värden och deras svar:
  
 Tips: Kolla in Math.min() och Math.max().
 */
+
+function get_min_max(...numbers) {
+    if (numbers.length < 2 || numbers.length > 7) {
+        return false;
+    }
+
+    return {
+        min: Math.min(...numbers),
+        max: Math.max(...numbers)
+    };
+}
+
+let result = get_min_max(2, 1, -1, -2);
+console.log('Min: ' + result.min);
+console.log('Max: ' + result.max);
