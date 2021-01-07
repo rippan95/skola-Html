@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    border-radius: 6px;
+    padding: 0.5rem;
+  }
+  
+  .moviesList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 200px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+  }
+  
+  .movie {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .movie:hover,
+  .selected {
+    cursor: pointer;
+    background-color: rgb(226, 226, 226);
+    transition: background-color 100ms ease-in-out;
+    text-decoration: underline;
+  }
+  
+  #movieInfoList {
+    list-style: none;
+    font-size: 2rem;
+  }
+  
+  .error {
+    width: 188px;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+  }
