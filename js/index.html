@@ -8,20 +8,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Movietime</title>
+    <title>FilmSite</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <img src="header.png" alt="header">
-
     <div class="container">
-      <div class="header">
-        <h1>Film söknig</h1>
-      </div>
+      
       <div class="searchWrapper">
+        <div class="header">
+          <h1>Movie Search</h1>
+        </div>
         <input
           style="font-family: 'FontAwesome', 'roboto'"
           type="text"
@@ -29,17 +26,9 @@
           placeholder="&#xf002  Search for a movie..."
         />
       </div>
-      <div id="results"></div>
+      <div id="results" class="results"></div>
       <div class="movieInfo" id="movieInfo"></div>
     </div>
-  </div>
-  <div class="listOfMovies">
-      <ul id="listItems">
-          
-      </ul>
-  </div>
-  <div class="alert alert-primary" id="error">Kan inte hittas</div>
-</div>
 
     <script src="script.js"></script>
   </body>
